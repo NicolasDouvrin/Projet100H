@@ -1,0 +1,13 @@
+
+Voilà le barème du dossier technique comprenant la soutenance :
+
+*	Scénario test ( plusieurs pts)
+*	Qualité powerpoint 
+*	Dynamisme de la soutenance
+*	Pertinence des choix techniques
+*	Validité du MCD
+*	Tests adaptés au projet
+*	Ergonomie Maquette
+*	Anticipation de Mise en Oeuvre (hébergeur)
+*	Validité du planning 
+*	Communication
