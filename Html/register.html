@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>Enregistrement</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", sans-serif;
+}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+body .login {
+  height: 400px;
+}
+
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> INFOS</a>
+    <a href="classement.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-line-chart"></i> CLASSEMENT</a>
+    <a href="tournoi.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-star"></i> TOURNOI</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="login.html" class="w3-bar-item w3-button w3-right w3-hide-small">CONNEXION</a>
+    <a href="register.html" class="w3-bar-item w3-button w3-right w3-hide-small">S'ENREGISTRER</a> 
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">INFOS</a>
+    <a href="classement.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CLASSEMENT</a>
+    <a href="tournoi.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TOURNOI</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="login.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONNEXION</a>
+    <a href="register.html" class="w3-bar-item w3-button" onclick="toggleFunction()">S'ENREGISTRER</a>
+  </div>
+</div>
+
+<div class='login'>
+  <div class='login_title w3-center'>
+    <span>ENREGISTREMENT</span>
+  </div>
+  <div class='login_fields'>
+    <div class='login_fields__user'>
+      <div class='icon'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+      </div>
+      <input placeholder='Email' type='text'>
+        <div class='validation'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+        </div>
+      </input>
+    </div>
+
+    <div class='login_fields__user'>
+      <div class='icon'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+      </div>
+      <input placeholder='Nom' type='text'>
+        <div class='validation'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+        </div>
+      </input>
+    </div>
+
+    <div class='login_fields__user'>
+      <div class='icon'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+      </div>
+      <input placeholder='Prénom' type='text'>
+        <div class='validation'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+        </div>
+      </input>
+    </div>
+
+    <div class='login_fields__user'>
+      <div class='icon'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+      </div>
+      <input placeholder='Classe' type='text'>
+        <div class='validation'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+        </div>
+      </input>
+    </div>
+
+    <div class='login_fields__password'>
+      <div class='icon'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png'>
+      </div>
+      <input placeholder='Mot de Passe' type='password'>
+      <div class='validation'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+      </div>
+    </div>
+    <div class='login_fields__submit w3-center'>
+      <input type='submit' value='VALIDER'>
+    </div>
+  </div>
+  <div class='success w3-center'>
+    <h2>Authentication Réussie</h2>
+    <p class="w3-center">Bienvenue</p>
+  </div>
+</div>
+<div class='authent'>
+  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/puff.svg'>
+  <p>Authentification...</p>
+</div>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+</body>
