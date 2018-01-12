@@ -6,14 +6,15 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: 'Gudea', sans-serif;
-  background: #EA5C54;
+  background-image: url('../img/login2.jpg');
+  /*background: #EA5C54;
   /* Old browsers */
   /* FF3.6+ */
   /* Chrome,Safari4+ */
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
-  background: linear-gradient(135deg, #EA5C54 0%, #bb6dec 100%);
+  /*background: linear-gradient(135deg, #EA5C54 0%, #bb6dec 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EA5C54 ', endColorstr='#bb6dec',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */

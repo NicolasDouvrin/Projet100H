@@ -6,6 +6,15 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+
+  <!-- siimple style -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 <style>
 
 body,h1,h2,h3,h4,h5,h6 {
@@ -31,8 +40,8 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+  <div class="w3-bar w3-show w3-card w3-animate-top w3-white" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
     <a href="index.html#home" class="w3-bar-item w3-button">HOME</a>
@@ -57,6 +66,47 @@ body, html {
   </div>
 </div>
 
+  <div id="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>WeBuild</h1>
+          <h2 class="subtitle">We're working hard to improve our website and we'll ready to launch after</h2>
+          <div id="countdown"></div>
+          <form class="form-inline signup" role="form">
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+            </div>
+            <button type="submit" class="btn btn-theme">Get notified!</button>
+          </form>
+
+          <div class="social">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row contctform">
+        <div class="col-md-8 col-md-offset-2">
+          <h3>Contact Us</h3>
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <script type="text/javascript">
+    $('#countdown').countdown('2018/04/17', function(event) {
+      $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'));
+    });
+  </script>
+
+  <script src="contactform/contactform.js"></script>
 
 
 </body>
