@@ -1,90 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <title>Pok'Heir Home</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
 
-body,h1,h2,h3,h4,h5,h6 {
-  font-family: "Lato", sans-serif;
-}
-body, html {
-    height: 100%;
-    line-height: 1.8;
-}
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+<div th:replace="~{fragment::style3}"></div>
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('img/poker2.jpg');
-    min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("img/poker3.jpg");
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("img/poker2.jpg");
-    min-height: 400px;
-}
-
-.w3-wide {
-	letter-spacing: 10px;
-}
-.w3-hover-opacity {
-	cursor: pointer;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
-</style>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-show w3-card w3-animate-top w3-white" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="accueil#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="accueil#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="accueil#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> INFOS</a>
-    <a href="classement" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-line-chart"></i> CLASSEMENT</a>
-    <a href="tournoi" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-star"></i> TOURNOI</a>
-    <a href="accueil#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="login" class="w3-bar-item w3-button w3-right w3-hide-small">CONNEXION</a>
-    <a href="register" class="w3-bar-item w3-button w3-right w3-hide-small">S'ENREGISTRER</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="accueil#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="accueil#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">INFOS</a>
-    <a href="classement" class="w3-bar-item w3-button" onclick="toggleFunction()">CLASSEMENT</a>
-    <a href="tournoi" class="w3-bar-item w3-button" onclick="toggleFunction()">TOURNOI</a>
-    <a href="accueil#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="login" class="w3-bar-item w3-button" onclick="toggleFunction()">CONNEXION</a>
-    <a href="register" class="w3-bar-item w3-button" onclick="toggleFunction()">S'ENREGISTRER</a>
-  </div>
-</div>
+<div th:replace="~{fragment::navbar}"></div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
@@ -273,18 +201,8 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
 </script>
+<div th:replace="~{fragment::script}"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1JtGDzS8P0AxqVGOxezXl19sH2VREHUw&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
