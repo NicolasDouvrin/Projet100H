@@ -19,6 +19,15 @@
         <url-pattern>/compte</url-pattern>
         <url-pattern>/deconnexion</url-pattern>
     </filter-mapping>
+    
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>devweb.filtres.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>l
 
     <servlet>
         <servlet-name>javax.ws.rs.core.Application</servlet-name>
