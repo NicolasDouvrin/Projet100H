@@ -115,7 +115,7 @@ public class LoginServlet extends GenericServlet {
             req.getSession().setAttribute("utilisateurConnecte",email);
             resp.sendRedirect("accueil");
         } else{
-            resp.sendRedirect("error");
+            resp.sendRedirect("login");
         }
 
     }

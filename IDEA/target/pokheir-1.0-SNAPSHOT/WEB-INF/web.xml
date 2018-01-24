@@ -27,7 +27,7 @@
     <filter-mapping>
         <filter-name>EncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
-    </filter-mapping>l
+    </filter-mapping>
 
     <servlet>
         <servlet-name>javax.ws.rs.core.Application</servlet-name>

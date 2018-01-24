@@ -20,21 +20,8 @@ public class CompteServlet extends GenericServlet {
         resp.setCharacterEncoding("UTF-8");
 
         WebContext context = new WebContext(req, resp, req.getServletContext());
-        List<Membre> listOfMembres = MembreLibrary.getInstance().listMembres();
-        context.setVariable("membresList", listOfMembres);
 
         TemplateEngine templateEngine = createTemplateEngine(req.getServletContext());
         templateEngine.process("compte", context, resp.getWriter());
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try {
-            Membre deleteMembre = MembreLibrary.getInstance().deleteMembre();
-
-            // REDIRECT TO DETAIL FILM
-            resp.sendRedirect("accueil");
-        } catch (IllegalArgumentException e) {
-        }
     }
 }

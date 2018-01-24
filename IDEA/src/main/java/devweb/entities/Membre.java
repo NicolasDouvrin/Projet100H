@@ -6,6 +6,33 @@ public class Membre {
         private String prenom;
         private String classe;
         private String mdp;
+        private Integer nbPoints;
+        private Integer partiesGagnees;
+        private Integer partiesJouees;
+
+    public Integer getNbPoints() {
+        return nbPoints;
+    }
+
+    public void setNbPoints(Integer nbPoints) {
+        this.nbPoints = nbPoints;
+    }
+
+    public Integer getPartiesGagnees() {
+        return partiesGagnees;
+    }
+
+    public void setPartiesGagnees(Integer partiesGagnees) {
+        this.partiesGagnees = partiesGagnees;
+    }
+
+    public Integer getPartiesJouees() {
+        return partiesJouees;
+    }
+
+    public void setPartiesJouees(Integer partiesJouees) {
+        this.partiesJouees = partiesJouees;
+    }
 
     public String getEmail() {
         return email;
@@ -47,12 +74,14 @@ public class Membre {
         this.mdp = mdp;
     }
 
-    public Membre(String email, String nom, String prenom, String classe, String mdp) {
-
+    public Membre(String email, String nom, String prenom, String classe, String mdp, Integer nbPoints, Integer partiesGagnees, Integer partiesJouees) {
         this.email = email;
         this.nom = nom;
         this.prenom = prenom;
         this.classe = classe;
         this.mdp = mdp;
+        this.nbPoints = nbPoints;
+        this.partiesGagnees = partiesGagnees;
+        this.partiesJouees = partiesJouees;
     }
 }
