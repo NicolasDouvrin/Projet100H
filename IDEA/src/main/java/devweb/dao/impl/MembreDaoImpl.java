@@ -11,7 +11,7 @@ public class MembreDaoImpl implements MembreDao {
 
     @Override
     public List<Membre> listMembres(){
-        String query = "SELECT * FROM membre ORDER BY nom;";
+        String query = "SELECT * FROM membre WHERE NOT nom='admin' ORDER BY nom;";
         List<Membre> listofMembres = new ArrayList<>();
         try (
                 Connection connection = DataSourceProvider.getDataSource().getConnection();
@@ -19,7 +19,11 @@ public class MembreDaoImpl implements MembreDao {
                 ResultSet resultSet = statement.executeQuery(query);
         ){
             while (resultSet.next()){
-                listofMembres.add(new Membre(resultSet.getString("email"),resultSet.getString("nom"),resultSet.getString("prenom"),resultSet.getString("classe"),resultSet.getString("mdp"),resultSet.getInt("nbPoints"),resultSet.getInt("partiesGagnees"),resultSet.getInt("partiesJouees")));
+                listofMembres.add(
+                        new Membre(resultSet.getString("email"),resultSet.getString("nom"),
+                                resultSet.getString("prenom"),resultSet.getString("classe"),
+                                resultSet.getString("mdp"),resultSet.getInt("nbPoints"),
+                                resultSet.getInt("partiesGagnees"),resultSet.getInt("partiesJouees")));
 
             }
         } catch (SQLException e) {
@@ -36,7 +40,11 @@ public class MembreDaoImpl implements MembreDao {
             statement.setString(1, email);
             try (ResultSet resultSet = statement.executeQuery()) {
                 if (resultSet.next()) {
-                    return new Membre(resultSet.getString("email"),resultSet.getString("nom"),resultSet.getString("prenom"),resultSet.getString("classe"),resultSet.getString("mdp"),resultSet.getInt("nbPoints"),resultSet.getInt("partiesGagnees"),resultSet.getInt("partiesJouees"));
+                    return new Membre(
+                            resultSet.getString("email"),resultSet.getString("nom"),
+                            resultSet.getString("prenom"),resultSet.getString("classe"),
+                            resultSet.getString("mdp"),resultSet.getInt("nbPoints"),
+                            resultSet.getInt("partiesGagnees"),resultSet.getInt("partiesJouees"));
                 }
             }
         } catch (SQLException e) {

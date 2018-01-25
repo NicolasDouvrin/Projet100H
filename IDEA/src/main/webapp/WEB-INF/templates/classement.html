@@ -11,91 +11,54 @@
 
 <body>
 
-<div th:replace="~{fragment::navbar}"></div>
+if(identifiantUtilisateurConnecte == null || "".equals(identifiantUtilisateurConnecte)) {
+<div th:replace="~{fragment::navbar2}"></div>
+} else {
+<div th:replace="~{fragment::navbar2}"></div>
+
 
 <div class="w3-content w3-container w3-white w3-center" id="class">
-  <h1 class="w3-center">Classement des joueurs</h1>
-</br>
+
+  <h1>Classement des joueurs</h1>
   <p>Voici les classements des membres de l'association lors des différents tournois:</p>
 
-  <table class="table table-hover">.
-
+  <table class="w3-content w3-table w3-table-hover w3-center">
     <thead>
-      <tr>
-        <th>Prénom</th>
-        <th>Nom</th>
-        <th>Points</th>
-      </tr>
+    <tr>
+      <th>Prénom</th>
+      <th>Nom</th>
+      <th>Points</th>
+      <th>Parties Gagnées</th>
+      <th>Parties Jouées</th>
+    </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>1500</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>1000</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>800</td>
-      </tr>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>600</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>400</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>0</td>
-      </tr>
-       <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>0</td>
-      </tr>
+    <tr th:each="membre : ${membresList}">
+      <td th:text="${membre.nom}">John</td>
+      <td th:text="${membre.prenom}">Doe</td>
+      <td th:text="${membre.nbPoints}">1500</td>
+      <td th:text="${membre.partiesGagnees}">15</td>
+      <td th:text="${membre.partiesJouees}">30</td>
+    </tr>
     </tbody>
   </table>
+
 </div>
 
 <div class="w3-container w3-content w3-center w3-white " id="regle">
 <h1 class="w3-center"> Règles des tournois </h1>
 </br>
 <p> Voici les règles des tournois de l'association <p>
-<p>- Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>- Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>- Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>- Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>- Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>- Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>- Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>- Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>- Le donneur distribue à chaque joueur deux cartes, une par une.</p>
-<p>- Le donneur distribue à chaque joueur deux cartes, une par une.</p>
+<p>1. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
+<p>2. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
+<p>3. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
+<p>4. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
+<p>5. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
+<p>6. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
+<p>7. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
+<p>8. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
+<p>9. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
+<p>10. Le donneur distribue à chaque joueur deux cartes, une par une.</p>
 
 
 </div>

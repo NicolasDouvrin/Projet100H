@@ -29,13 +29,5 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <servlet>
-        <servlet-name>javax.ws.rs.core.Application</servlet-name>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>javax.ws.rs.core.Application</servlet-name>
-        <url-pattern>/quizzws/*</url-pattern>
-    </servlet-mapping>
 
 </web-app>

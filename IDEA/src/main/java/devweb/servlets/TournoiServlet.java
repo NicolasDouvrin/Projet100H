@@ -8,8 +8,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
-@WebServlet("/tournoi")
+@WebServlet("/tournois")
 public class TournoiServlet extends GenericServlet {
 
     @Override
@@ -20,6 +21,6 @@ public class TournoiServlet extends GenericServlet {
         WebContext context = new WebContext(req, resp, req.getServletContext());
 
         TemplateEngine templateEngine = createTemplateEngine(req.getServletContext());
-        templateEngine.process("tournoi", context, resp.getWriter());
+        templateEngine.process("tournois", context, resp.getWriter());
     }
 }

@@ -20,6 +20,8 @@ public class RegisterServlet extends GenericServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
 
+        String identifiantUtilisateurConnecte = (String) req.getSession().getAttribute("utilisateurConnecte");
+        if(identifiantUtilisateurConnecte == null || "".equals(identifiantUtilisateurConnecte)) {
         out.println("<!DOCTYPE html>");
         out.println("<html class=\"registration\">");
         out.println("<!-- Titre de l'onglet -->");
@@ -44,7 +46,7 @@ public class RegisterServlet extends GenericServlet {
         out.println("            <a href=\"accueil#about\" class=\"w3-bar-item w3-button w3-hide-small\"><i class=\"fa fa-user\"></i> ABOUT</a>");
         out.println("            <a href=\"accueil#portfolio\" class=\"w3-bar-item w3-button w3-hide-small\"><i class=\"fa fa-book\"></i> INFOS</a>");
         out.println("            <a href=\"classement\" class=\"w3-bar-item w3-button w3-hide-small\"><i class=\"fa fa-line-chart\"></i> CLASSEMENT</a>");
-        out.println("            <a href=\"tournoi\" class=\"w3-bar-item w3-button w3-hide-small\"><i class=\"fa fa-star\"></i> TOURNOI</a>");
+        out.println("            <a href=\"tournois\" class=\"w3-bar-item w3-button w3-hide-small\"><i class=\"fa fa-star\"></i> TOURNOIS</a>");
         out.println("            <a href=\"accueil#contact\" class=\"w3-bar-item w3-button w3-hide-small\"><i class=\"fa fa-envelope\"></i> CONTACT</a>");
         out.println("            <a href=\"login\" class=\"w3-bar-item w3-button w3-right w3-hide-small\">CONNEXION</a>");
         out.println("            <a href=\"register\" class=\"w3-bar-item w3-button w3-right w3-hide-small\">S'ENREGISTRER</a>");
@@ -55,7 +57,7 @@ public class RegisterServlet extends GenericServlet {
         out.println("            <a href=\"accueil#about\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\">ABOUT</a>");
         out.println("            <a href=\"accueil#portfolio\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\">INFOS</a>");
         out.println("            <a href=\"classement\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\">CLASSEMENT</a>");
-        out.println("            <a href=\"tournoi\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\">TOURNOI</a>");
+        out.println("            <a href=\"tournois\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\">TOURNOIS</a>");
         out.println("            <a href=\"accueil#contact\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\">CONTACT</a>");
         out.println("            <a href=\"login\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\">CONNEXION</a>");
         out.println("            <a href=\"register\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\">S'ENREGISTRER</a>");
@@ -98,6 +100,8 @@ public class RegisterServlet extends GenericServlet {
         out.println("</div>");
         out.println("</div>");
         out.println("/body>");
+        }else
+        { resp.sendRedirect("compte");}
     }
 
     @Override
