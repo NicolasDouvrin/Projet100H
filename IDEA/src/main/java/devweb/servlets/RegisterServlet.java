@@ -99,7 +99,19 @@ public class RegisterServlet extends GenericServlet {
         out.println("</div>");
         out.println("</div>");
         out.println("</div>");
-        out.println("/body>");
+            out.println("  <script>");
+            out.println("      // Used to toggle the menu on small screens when clicking on the menu button");
+            out.println("      function toggleFunction() {");
+            out.println("          var x = document.getElementById(\"navDemo\");");
+            out.println("          if (x.className.indexOf(\"w3-show\") == -1) {");
+            out.println("              x.className += \" w3-show\";");
+            out.println("          } else {");
+            out.println("              x.className = x.className.replace(\" w3-show\", \"\");");
+            out.println("          }");
+            out.println("      }");
+            out.println("  </script>");
+        out.println("</body>");
+        out.println("</html>");
         }else
         { resp.sendRedirect("compte");}
     }
