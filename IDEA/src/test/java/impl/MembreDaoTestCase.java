@@ -37,9 +37,9 @@ public class MembreDaoTestCase {
         // WHEN
         List<Membre> membres = membreDao.listMembres();
         // THEN
-        assertThat(membres).hasSize(4);
+        assertThat(membres).hasSize(3);
         assertThat(membres).extracting("email", "nom","nbPoints").containsOnly(tuple("jc@hei.fr", "Blanc",0), tuple("michel@hei.fr", "Pastel",0),
-                tuple("jp@hei.fr", "Boulon",0),tuple("admin@hei.yncrea.fr","admin",0));
+                tuple("jp@hei.fr", "Boulon",0));
     }
 
     @Test
