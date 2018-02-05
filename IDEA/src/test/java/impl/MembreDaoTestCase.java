@@ -9,6 +9,7 @@ import org.junit.Test;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
@@ -85,6 +86,18 @@ public class MembreDaoTestCase {
                 assertThat(rs.getInt("partiesJouees")).isEqualTo(0);
                 assertThat(rs.next()).isFalse();
             }
+        }
+    }
+
+    @Test
+    public void shouldDeleteMembre() throws Exception {
+
+        membreDao.deleteMembre("test");
+
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             Statement stmt = connection.createStatement()) {
+            stmt.executeUpdate("DELETE FROM articles WHERE email='test' ");
+
         }
     }
 }
