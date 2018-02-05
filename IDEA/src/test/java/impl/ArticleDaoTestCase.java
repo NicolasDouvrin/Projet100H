@@ -5,6 +5,7 @@ import devweb.entities.Article;
 import org.junit.Before;
 import org.junit.Test;
 
+import javax.validation.constraints.Null;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -23,9 +24,10 @@ public class ArticleDaoTestCase {
             try (Connection connection = articleDao.getDatasource().getConnection();
                  Statement stmt = connection.createStatement()) {
                 stmt.executeUpdate("DELETE FROM articles");
-                stmt.executeUpdate("INSERT INTO articles(idArticle, titre, image, texte) VALUES(1, 'Article #1', 'First image', 'First texte')");
-                stmt.executeUpdate("INSERT INTO articles(idArticle, titre, image, texte) VALUES(2, 'Article #2', 'Second image', 'Second texte')");
-                stmt.executeUpdate("INSERT INTO articles(idArticle, titre, image, texte) VALUES(3, 'Article #3', 'Third image', 'Third texte')");
+                stmt.executeUpdate("INSERT INTO articles(idArticle, titre, image, texte) VALUES(1, 'Article 1', 'First image', 'First texte')");
+                stmt.executeUpdate("INSERT INTO articles(idArticle, titre, image, texte) VALUES(2, 'Article 2', 'Second image', 'Second texte')");
+                stmt.executeUpdate("INSERT INTO articles(idArticle, titre, image, texte) VALUES(3, 'Article 3', 'Third image', 'Third texte')");
+
             }
         }
 
@@ -36,14 +38,14 @@ public class ArticleDaoTestCase {
             // THEN
             assertThat(articles).hasSize(3);
             assertThat(articles).extracting("idArticle", "titre", "image", "texte").containsOnly(
-                    tuple(1, "Article #1", "First image", "First texte"),
-                    tuple(2, "Article #2", "Second image", "Second texte"),
-                    tuple(3, "Article #3", "Third image", "Third texte")
+                    tuple(1, "Article 1", "First image", "First texte"),
+                    tuple(2, "Article 2", "Second image", "Second texte"),
+                    tuple(3, "Article 3", "Third image", "Third texte")
             );
         }
 
-               @Test
-        public void shouldAddQuote() throws SQLException {
+        @Test
+        public void shouldAddArticle() throws SQLException {
             // GIVEN
             Article article = new Article(null, "new titre", "new image", "bonjour à tous, bonjour à tous, bonjour à tous, bonjour à tous, bonjour à tous");
             // WHEN
@@ -51,7 +53,7 @@ public class ArticleDaoTestCase {
             // THEN
             try (Connection connection = articleDao.getDatasource().getConnection();
                  Statement stmt = connection.createStatement()) {
-                try (ResultSet rs = stmt.executeQuery("SELECT * FROM articles WHERE titre = 'new titre'")) {
+                try (ResultSet rs = stmt.executeQuery("SELECT * FROM articles WHERE titre = 'new titre' ")) {
                     assertThat(rs.next()).isTrue();
                     assertThat(rs.getInt("idArticle")).isGreaterThan(0);
                     assertThat(rs.getString("titre")).isEqualTo("new titre");
@@ -60,5 +62,17 @@ public class ArticleDaoTestCase {
                     assertThat(rs.next()).isFalse();
                 }
             }
+        }
+
+        @Test
+        public void shouldDelArticle() throws SQLException {
+
+            articleDao.delArticle(4);
+
+            try (Connection connection = articleDao.getDatasource().getConnection();
+                 Statement stmt = connection.createStatement()) {
+                stmt.executeUpdate("DELETE FROM articles WHERE idArticle=4 ");
+
+                }
         }
 }
