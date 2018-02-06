@@ -18,6 +18,7 @@
         <url-pattern>/classement</url-pattern>
         <url-pattern>/compte</url-pattern>
         <url-pattern>/deconnexion</url-pattern>
+        <url-pattern>/index2</url-pattern>
     </filter-mapping>
     
     <filter>
@@ -28,6 +29,22 @@
         <filter-name>EncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+    <servlet>
+        <servlet-name>FileUploadHandler</servlet-name>
+        <servlet-class>devweb.services.FileUploadHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUploadHandler</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+
 
 
 </web-app>

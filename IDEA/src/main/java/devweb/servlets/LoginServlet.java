@@ -156,7 +156,7 @@ public class LoginServlet extends GenericServlet {
 
         if (password1.equals(password2)) {
             req.getSession().setAttribute("utilisateurConnecte",email);
-            resp.sendRedirect("accueil");
+            resp.sendRedirect("accueil2");
         } else{
             resp.sendRedirect("login");
         }

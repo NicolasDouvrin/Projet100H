@@ -6,7 +6,68 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1faf17b3-531b-45b3-a62c-f524e2803b24" name="Default" comment="" />
+    <list default="true" id="1faf17b3-531b-45b3-a62c-f524e2803b24" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/IDEA_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/IDEA_war_exploded.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/IDEA.iml" afterPath="$PROJECT_DIR$/IDEA.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devweb/dao/MembreDao.java" afterPath="$PROJECT_DIR$/src/main/java/devweb/dao/MembreDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devweb/dao/impl/MembreDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/devweb/dao/impl/MembreDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devweb/managers/MembreLibrary.java" afterPath="$PROJECT_DIR$/src/main/java/devweb/managers/MembreLibrary.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devweb/servlets/AccueilAdminServlet.java" afterPath="$PROJECT_DIR$/src/main/java/devweb/servlets/AccueilAdminServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devweb/servlets/AccueilServlet.java" afterPath="$PROJECT_DIR$/src/main/java/devweb/servlets/AccueilServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devweb/servlets/RegisterServlet.java" afterPath="$PROJECT_DIR$/src/main/java/devweb/servlets/RegisterServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Articles.sql" afterPath="$PROJECT_DIR$/src/main/resources/Articles.sql" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Membres.sql" afterPath="$PROJECT_DIR$/src/main/resources/Membres.sql" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueilAdmin.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueilAdmin.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/classement.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/classement.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/compte.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/compte.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragment.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragment.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/tournois.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/tournois.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/compiled/flipclock.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/compiled/flipclock.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/compiled/flipclock.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/logo2.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/img/logo2.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/impl/MembreDaoTestCase.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Articles.sql" afterPath="$PROJECT_DIR$/target/classes/Articles.sql" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Membres.sql" afterPath="$PROJECT_DIR$/target/classes/Membres.sql" />
+      <change beforePath="$PROJECT_DIR$/target/classes/devweb/dao/MembreDao.class" afterPath="$PROJECT_DIR$/target/classes/devweb/dao/MembreDao.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/devweb/dao/impl/MembreDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/devweb/dao/impl/MembreDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/devweb/managers/MembreLibrary.class" afterPath="$PROJECT_DIR$/target/classes/devweb/managers/MembreLibrary.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/devweb/servlets/AccueilAdminServlet.class" afterPath="$PROJECT_DIR$/target/classes/devweb/servlets/AccueilAdminServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/devweb/servlets/AccueilServlet.class" afterPath="$PROJECT_DIR$/target/classes/devweb/servlets/AccueilServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/devweb/servlets/LoginServlet.class" afterPath="$PROJECT_DIR$/target/classes/devweb/servlets/LoginServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/devweb/servlets/RegisterServlet.class" afterPath="$PROJECT_DIR$/target/classes/devweb/servlets/RegisterServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/Articles.sql" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/Articles.sql" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/Membres.sql" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/Membres.sql" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/dao/MembreDao.class" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/dao/MembreDao.class" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/dao/impl/MembreDaoImpl.class" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/dao/impl/MembreDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/managers/MembreLibrary.class" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/managers/MembreLibrary.class" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/AccueilAdminServlet.class" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/AccueilAdminServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/AccueilServlet.class" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/AccueilServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/LoginServlet.class" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/LoginServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/RegisterServlet.class" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/devweb/servlets/RegisterServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/accueilAdmin.html" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/accueilAdmin.html" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/classement.html" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/classement.html" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/compte.html" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/compte.html" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/fragment.html" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/fragment.html" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/index.html" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/index.html" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/tournois.html" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/templates/tournois.html" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/compiled/flipclock.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/compiled/flipclock.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/compiled/flipclock.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/img/logo2.jpg" afterPath="$PROJECT_DIR$/target/pokheir-1.0-SNAPSHOT/img/logo2.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/impl/MembreDaoTestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/impl/MembreDaoTestCase.class" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +82,8 @@
       <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="109" column="133" lean-forward="false" selection-start-line="109" selection-start-column="133" selection-end-line="109" selection-end-column="133" />
+            <state relative-caret-position="3322">
+              <caret line="158" column="39" lean-forward="false" selection-start-line="158" selection-start-column="39" selection-end-line="158" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -31,68 +92,69 @@
       <file leaf-file-name="accueilAdmin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueilAdmin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="12">
+              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompteServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/CompteServlet.java">
+      <file leaf-file-name="index2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="-1810">
+              <caret line="73" column="123" lean-forward="false" selection-start-line="73" selection-start-column="123" selection-end-line="73" selection-end-column="123" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteMembreServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/DeleteMembreServlet.java">
+      <file leaf-file-name="classement.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/classement.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MembreDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/devweb/dao/MembreDao.java">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+            <state relative-caret-position="2090">
+              <caret line="95" column="42" lean-forward="false" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MembreLibrary.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/devweb/managers/MembreLibrary.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-              <folding>
-                <element signature="e#217#218#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="242">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MembreDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/devweb/dao/impl/MembreDaoImpl.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="100" column="5" lean-forward="false" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
-              <folding>
-                <marker date="1517847112388" expanded="true" signature="286:341" ph="SELECT * FRO... membre" />
-                <marker date="1517847112388" expanded="true" signature="1318:1352" ph="SELECT * FRO... membre" />
-                <marker date="1517847112388" expanded="true" signature="2344:2466" ph="INSERT INTO membre... " />
-                <marker date="1517847112388" expanded="true" signature="3055:3091" ph="SELECT mdp F... membre" />
-                <marker date="1517847112388" expanded="true" signature="3704:3736" ph="DELETE FROM membre... " />
-              </folding>
+            <state relative-caret-position="364">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3620">
+              <caret line="233" column="30" lean-forward="false" selection-start-line="233" selection-start-column="30" selection-end-line="233" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,10 +164,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="AnnotationType" />
         <option value="Tag Library Descriptor" />
         <option value="FxmlFile" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -118,7 +180,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -137,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/GenericServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/entities/Membre.java" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/ClassementServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/classement.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/tournoi.html" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/TournoiServlet.java" />
@@ -146,8 +207,6 @@
         <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/AccueilAdminServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/compte.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/tournois.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragment.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/dao/impl/Bean.java" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/dao/impl/Configuration.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml.fxml" />
@@ -159,10 +218,8 @@
         <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/AddArticleServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/RegisterServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/services/ArticleService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueilAdmin.html" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/DeleteArticleServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/entities/Article.java" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/dao/ArticleDao.java" />
@@ -171,8 +228,16 @@
         <option value="$PROJECT_DIR$/src/main/java/devweb/dao/impl/MembreDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/dao/MembreDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/devweb/managers/MembreLibrary.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/impl/MembreDaoTestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/devweb/servlets/Accueil2Servlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragment.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/classement.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueilAdmin.html" />
+        <option value="$PROJECT_DIR$/src/main/java/devweb/services/FileUploadHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index2.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -197,8 +262,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
+    <option name="x" value="348" />
+    <option name="y" value="15" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -220,8 +285,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -375,8 +438,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,7 +452,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Dropbox/HEI 4/DOMAINE/Semestre 1/WEB/TP web/TP7/TP7 Correction" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../DOMAINE/Semestre 1/WEB/TP web/TP7/TP7 Correction" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -733,6 +798,7 @@
       <workItem from="1517826670319" duration="3838000" />
       <workItem from="1517839968705" duration="4884000" />
       <workItem from="1517846969221" duration="362000" />
+      <workItem from="1517922860018" duration="6645000" />
     </task>
     <servers />
   </component>
@@ -769,41 +835,40 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88324000" />
+    <option name="totallyTimeSpent" value="94969000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.250264" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19947916" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34428087" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19924812" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -826,16 +891,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/GenericServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/slide1.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap-theme.css" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/style.css" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/font-awesome.css" />
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/ClassementServlet.java">
@@ -860,13 +915,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/compiled/flipclock.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/classement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/TournoiServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -910,14 +958,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml.tld" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/dao/impl/MainConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/dao/impl/ArticleDao.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/ArticleListServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/AccueilAdminServlet.java">
@@ -925,16 +965,6 @@
         <state relative-caret-position="180">
           <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/AccueilServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -959,20 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="153" column="183" lean-forward="false" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="183" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="87" column="33" lean-forward="false" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/RegisterServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2376">
@@ -986,7 +1002,7 @@
         <state relative-caret-position="324">
           <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1010,12 +1026,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
           <caret line="55" column="45" lean-forward="false" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
-          <folding>
-            <marker date="1517844723155" expanded="true" signature="943:965" ph="SELECT * FRO... articles" />
-            <marker date="1517844723155" expanded="true" signature="1464:1521" ph="INSERT INTO articles... " />
-            <marker date="1517844723155" expanded="true" signature="2039:2077" ph="DELETE FROM articles... " />
-            <marker date="1517844723155" expanded="true" signature="2045:2077" ph="UPDATE articles... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,16 +1035,8 @@
         <state relative-caret-position="36">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="109" column="133" lean-forward="false" selection-start-line="109" selection-start-column="133" selection-end-line="109" selection-end-column="133" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,67 +1048,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/dao/impl/MembreDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="100" column="5" lean-forward="false" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
-          <folding>
-            <marker date="1517847112388" expanded="true" signature="286:341" ph="SELECT * FRO... membre" />
-            <marker date="1517847112388" expanded="true" signature="1318:1352" ph="SELECT * FRO... membre" />
-            <marker date="1517847112388" expanded="true" signature="2344:2466" ph="INSERT INTO membre... " />
-            <marker date="1517847112388" expanded="true" signature="3055:3091" ph="SELECT mdp F... membre" />
-            <marker date="1517847112388" expanded="true" signature="3704:3736" ph="DELETE FROM membre... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devweb/entities/Membre.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-166">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/dao/MembreDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/managers/MembreLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-          <folding>
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueilAdmin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/CompteServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="70" column="8" lean-forward="false" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1122,15 +1068,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="96" column="88" lean-forward="true" selection-start-line="96" selection-start-column="88" selection-end-line="96" selection-end-column="88" />
-          <folding>
-            <marker date="1517847330843" expanded="true" signature="782:800" ph="DELETE FROM membre... " />
-            <marker date="1517847330843" expanded="true" signature="836:918" ph="INSERT INTO membre... " />
-            <marker date="1517847330843" expanded="true" signature="954:1046" ph="INSERT INTO membre... " />
-            <marker date="1517847330843" expanded="true" signature="1082:1162" ph="INSERT INTO membre... " />
-            <marker date="1517847330843" expanded="true" signature="1198:1295" ph="INSERT INTO membre... " />
-            <marker date="1517847330843" expanded="true" signature="2898:3067" ph="SELECT * FRO... membre" />
-            <marker date="1517847330843" expanded="true" signature="4038:4077" ph="DELETE FROM articles... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,16 +1076,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding>
-            <marker date="1517844855856" expanded="true" signature="770:790" ph="DELETE FROM articles... " />
-            <marker date="1517844855856" expanded="true" signature="830:935" ph="INSERT INTO articles... " />
-            <marker date="1517844855856" expanded="true" signature="975:1082" ph="INSERT INTO articles... " />
-            <marker date="1517844855856" expanded="true" signature="1122:1227" ph="INSERT INTO articles... " />
-            <marker date="1517844855856" expanded="true" signature="2350:2386" ph="SELECT * FRO... articles" />
-            <marker date="1517844855856" expanded="true" signature="2350:2398" ph="SELECT * FRO... articles" />
-            <marker date="1517844855856" expanded="true" signature="3231:3269" ph="DELETE FROM articles... " />
-            <marker date="1517844855856" expanded="true" signature="3269:3272" ph="DELETE FROM articles... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1155,6 +1084,139 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/CompteServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/dao/MembreDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/managers/MembreLibrary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+          <folding>
+            <element signature="e#217#218#0" expanded="false" />
+            <element signature="e#263#264#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/dao/impl/MembreDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="100" column="5" lean-forward="false" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/filtres/AuthentificationFiltre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/Accueil2Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/AccueilServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3620">
+          <caret line="233" column="30" lean-forward="false" selection-start-line="233" selection-start-column="30" selection-end-line="233" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/classement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/servlets/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3322">
+          <caret line="158" column="39" lean-forward="false" selection-start-line="158" selection-start-column="39" selection-end-line="158" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devweb/services/FileUploadHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="57" column="44" lean-forward="false" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="95" column="42" lean-forward="false" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/accueilAdmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1810">
+          <caret line="73" column="123" lean-forward="false" selection-start-line="73" selection-start-column="123" selection-end-line="73" selection-end-column="123" />
           <folding />
         </state>
       </provider>
