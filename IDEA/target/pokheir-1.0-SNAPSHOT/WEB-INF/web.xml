@@ -30,21 +30,4 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <servlet>
-        <servlet-name>FileUploadHandler</servlet-name>
-        <servlet-class>devweb.services.FileUploadHandler</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>FileUploadHandler</servlet-name>
-        <url-pattern>/upload</url-pattern>
-    </servlet-mapping>
-
-    <session-config>
-        <session-timeout>
-            30
-        </session-timeout>
-    </session-config>
-
-
-
 </web-app>

@@ -72,10 +72,6 @@
             <h3 th:text="${article.titre}">Article 1</h3>
             <p th:text="${article.texte}"> Voici l'article 1 concernant le premier tournoi de l'année. Il se déroulera le 23/12/2017 à partir de 14h en T101.</p>
             <img th:ref="${article.image}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo">
-            <div id="result">
-                <h3>${requestScope["message"]}</h3>
-            </div>
-
         </div>
     </div>
 </div>
