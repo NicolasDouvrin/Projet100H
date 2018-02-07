@@ -148,14 +148,9 @@ public class LoginServlet extends GenericServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String email=req.getParameter("email");
-/*
-        req.setAttribute("utilisateur",email);
-        RequestDispatcher rd = req.getRequestDispatcher("DeleteMembreServlet");
-        rd.forward(req,resp);
-*/
 
         String password1= MembreLibrary.getInstance().getMdp(email);
-        String password2=req.getParameter("password");
+        String password2= req.getParameter("password");
 
         if (password1==null){
             password1="";

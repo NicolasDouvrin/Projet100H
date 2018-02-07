@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class AuthentificationFiltre  implements Filter{
+public class FilterAdmin implements Filter{
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -16,10 +16,12 @@ public class AuthentificationFiltre  implements Filter{
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest httpRequest = (HttpServletRequest) request;
         String identifiant = (String) httpRequest.getSession().getAttribute("utilisateurConnecte");
-        if(identifiant == null || "".equals(identifiant)) {
-            System.out.println("Il faut être connecté pour accéder à cette page !");
-            HttpServletResponse httpResponse = (HttpServletResponse) response;
-            httpResponse.sendRedirect("/login");
+        System.out.println(identifiant);
+        HttpServletResponse httpResponse = (HttpServletResponse) response;
+
+        if(!identifiant.equals("admin@hei.yncrea.fr")) {
+            System.out.println("Vous n'etes pas admin !");
+            httpResponse.sendRedirect("compte");
             return;
         }
         chain.doFilter(request, response);
