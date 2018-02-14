@@ -63,7 +63,7 @@
 
         <p> Image :</p>
         <a id="test_btn" href="javascript:openPicker()" class="w3-button w3-gray">Ajouter une image</a> </br>
-        <input id="image" type="hidden">
+        <input id="image" name="image" type="hidden" value="raté" href="javascript:openPicker()">
 
         </br><input class="w3-btn w3-round w3-green w3-center" type="submit" value="VALIDER" style="margin-bottom: 20px;width: 234px;"></br>
 
@@ -87,21 +87,21 @@
 
 <script src="https://static.filestackapi.com/v3/filestack.js"></script>
 <script type="text/javascript">
-    var client = filestack.init('ATCEDtS0aSHWTnb68NcaBz');
-    var image = document.getElementsById("image");
+    var fsClient = filestack.init('ATCEDtS0aSHWTnb68NcaBz');
+    const link = document.getElementById('image');
     function openPicker() {
-
-        client.pick({
+        fsClient.pick({
             fromSources:["local_file_system"],
             lang:"fr",
-            accept:["image/*"]
+            maxFiles:1,
+            transformations:{
+                crop:{      force:true,
+                    aspectRatio:1.778}}
         }).then(function(response) {
-
-            handleFilestack(response);
+            const fileUrl = response.filesUploaded[0].url;
+            link.value=fileUrl;
         });
     }
-  /*  client.store(input, {options}, onSuccess(Blob){}, onError(FPError){}, onProgress(percent){});
-    image.value = URL; */
 
 </script>
 
