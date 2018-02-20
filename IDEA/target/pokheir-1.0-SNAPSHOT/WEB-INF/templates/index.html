@@ -70,9 +70,9 @@
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
-    <div class="w3-col m3" th:each="article : ${articles}">
+    <div class="w3-col m3 w3-content" style="margin-bottom: 50px;" th:each="article : ${articles}">
     	<h3 th:text="${article.titre}">Article 1</h3>
-    	<p th:text="${article.texte}"> Voici l'article 1 concernant le premier tournoi de l'année. Il se déroulera le 23/12/2017 à partir de 14h en T101.</p>
+        <p id="article" th:text="${article.texte}"> Voici l'article 1.</p>
         <img th:src="${article.image}" style="width:100%;max-height: 200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Photo">
     </div>
   </div>
