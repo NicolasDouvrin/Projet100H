@@ -8,27 +8,30 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head><link rel="icon" type="image/ico" href="/img/pique.ico" /></head>
 
+<link rel="stylesheet" href="compiled/flipclock.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="compiled/flipclock.js"></script>
+
 <div th:replace="~{fragment::style4}"></div>
 
 <body>
 
 <div th:replace="~{fragment::navbar3}"></div>
 
-<div class="w3-content w3-display-middle w3-white w3-center w3-hide-large w3-hide-medium">
-    <h1 style="left: 50%;right: 50%;padding-left: 32px;padding-right: 32px;"> PAGE EN COURS DE </br> CONSTRUCTION </h1>
-    <img src="/img/Attention.jpg" width="400px">
-
+<div class="w3-display-middle w3-content w3-container w3-white" style="width: 500px;height: 500px;">
+<div class="clock" id="clock2"></div>
 </div>
-
-<div class="w3-content w3-margin-top w3-display-middle w3-white w3-center w3-padding-64 w3-hide-small" style="padding-right: 200px;padding-left: 200px">
-    <h1 class="w3-margin-top"> PAGE EN COURS DE </h1>
-    <h1>CONSTRUCTION</h1>
-    <img src="/img/Attention.jpg" width="400px">
-
-</div>
-
 
 <div th:replace="~{fragment::script}"></div>
+
+
+<script type="text/javascript">
+    var clock;
+    $(document).ready(function() {
+        $('.clock').load("tournoiadmin #clock"),
+        clock = $('.clock').FlipClock(60)
+    });
+</script>
 
 </body>
 

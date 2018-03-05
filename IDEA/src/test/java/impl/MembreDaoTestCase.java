@@ -94,10 +94,10 @@ public class MembreDaoTestCase {
 
         membreDao.deleteMembre("test");
 
-        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+      /*  try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              Statement stmt = connection.createStatement()) {
             stmt.executeUpdate("DELETE FROM articles WHERE email='test' ");
 
-        }
+        }*/
     }
 }
