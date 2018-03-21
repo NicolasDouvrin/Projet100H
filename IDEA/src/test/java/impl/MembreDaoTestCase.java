@@ -55,7 +55,6 @@ public class MembreDaoTestCase {
         assertThat(membre.getClasse()).isEqualTo("H44");
         assertThat(membre.getMdp()).isEqualTo("123");
         assertThat(membre.getNbPoints()).isEqualTo(0);
-        assertThat(membre.getPartiesGagnees()).isEqualTo(0);
         assertThat(membre.getPartiesJouees()).isEqualTo(0);
     }
 

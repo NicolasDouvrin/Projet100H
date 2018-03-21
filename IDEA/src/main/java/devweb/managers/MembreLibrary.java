@@ -12,6 +12,10 @@ public class MembreLibrary {
         return membreDao.listMembres();
     }
 
+    public List<Membre> listMembresInscrit() {
+        return membreDao.listMembresInscrit();
+    }
+
     private static class MembreLibraryHolder {
         private final static MembreLibrary instance = new MembreLibrary();
     }
@@ -46,5 +50,11 @@ public class MembreLibrary {
         membreDao.modifMdp(email,mdp);
     }
 
+    public void addPoint(String email, Integer nbpoint){
+        membreDao.addPoint(email,nbpoint);
+    };
 
+    public void deleteallpoint(){
+        membreDao.deleteallpoint();
+    };
 }

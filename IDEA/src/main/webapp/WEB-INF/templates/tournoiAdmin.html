@@ -21,17 +21,18 @@
 <div name="tournoi" class="w3-center w3-content w3-container w3-white" style="margin-top: 80px;">
     <h1> GESTION DES TOURNOIS </h1>
 
-    <div name="minuteur" id="minuteur" class="w3-display-bottomright w3-quarter w3-center w3-container w3-content w3-blue" style="height: 500px;margin-right: 80px; padding-bottom:80px;">
+    <div name="minuteur" id="minuteur" class="w3-display-right w3-quarter w3-center w3-container w3-content w3-blue" style="margin-right: 80px;
+     padding-bottom:80px;top:60%;">
         <h1 class="w3-border" style="margin-bottom: 50px"> TIMER </h1>
-        <div class="clock" id="clock" style="margin:2em;"></div>
+        <div class="clock w3-center" id="clock" style="margin:2em;"></div>
         <p> Entrez un timer en minutes : </p>
         <input class="timer" type="number" id="timer" min="1" max="99" step="1"/></br></br>
-        <button class="start w3-green w3-btn"> Start </button>
-        <button class="stop w3-red w3-btn"> Stop </button></br></br>
-        <button class="reset w3-amber w3-btn"> Set/Reset </button></br>
+        <btn class="start w3-green w3-btn"> Start </btn>
+        <btn class="stop w3-red w3-btn"> Stop </btn></br></br>
+        <btn class="reset w3-amber w3-btn"> Set/Reset </btn></br>
     </div>
 
-    <div name="gestion tournoi" class="w3-display-bottommiddle w3-quarter w3-center w3-content w3-container w3-blue" style="height: 500px;padding-bottom:50px;">
+    <div name="gestion tournoi" class="w3-display-middle w3-quarter w3-center w3-content w3-container w3-blue" style="padding-bottom:50px;top:60%;">
         <h1 class="w3-border" style="margin-bottom: 50px;"> TABLES</h1>
         <p> Nombre de joueurs inscrits : 34 </p></br>
         <select style="width: 200px;">
@@ -47,32 +48,24 @@
             <option> Placement Aléatoire </option>
             <option> Placement par Classement </option>
         </select></br></br>
-        <button class="w3-btn w3-green" style="margin-bottom: 10px"> LANCER TOURNOI</button></br>
-        <button class="w3-btn w3-amber" >  NOUVELLE PARTIE </button></br>
-        <button class="w3-btn w3-red" style="margin-top: 50px;"> RESET TOURNOI</button></br>
+        <btn class="w3-btn w3-green" style="margin-bottom: 10px"> LANCER TOURNOI</btn></br>
+        <btn class="w3-btn w3-amber" >  NOUVELLE PARTIE </btn></br>
+        <btn class="w3-btn w3-red" style="margin-top: 50px;"> RESET TOURNOI</btn></br>
     </div>
 
-    <div name="gestion points" class="w3-display-bottomleft w3-quarter w3-center w3-content w3-container w3-blue" style="height: 500px;margin-left: 80px;padding-bottom:50px;">
-        <h1 class="w3-border" style="margin-bottom:60px;"> POINTS </h1>
+    <div name="gestion points" class="w3-display-left w3-quarter w3-center w3-content w3-container w3-blue" style="margin-left: 80px;padding-bottom:50px;top:60%;">
+        <h1 class="w3-border" style="margin-bottom:50px;"> POINTS </h1>
         <p> Sélectionner un joueur et entrer ses points :</p>
-        <select style="margin-bottom: 5px;">
-            <option> Joueurs Inscrits </option>
-            <input type="number" name="points" min="0" step="1" style="width: 130px;height: 22px;">
+        <select class="w3-select" name="email" style="margin-bottom: 5px;width: 60%;">
+            <option > Joueurs Inscrits </option>
+            <option name="option2" th:each="membre : ${membresList}"
+                    th:text="${membre.nom}+' '+${membre.prenom}"
+                    th:value="${membre.email}">
+            </option>
         </select></br>
-        <select style="margin-bottom: 5px;">
-            <option> Joueurs Inscrits </option>
-            <input type="number" name="points" min="0" step="1"style="width: 130px;height: 22px;">
-        </select></br>
-        <select style="margin-bottom: 5px;">
-            <option> Joueurs Inscrits </option>
-            <input type="number" name="points" min="0" step="1" style="width: 130px;height: 22px;">
-        </select></br>
-        <select style="margin-bottom: 5px;">
-            <option> Joueurs Inscrits </option>
-            <input type="number" name="points" min="0" step="1" style="width: 130px;height: 22px;">
-        </select></br>
-        <button class="w3-btn w3-green" style="margin-top: 40px;"> VALIDER POINTS </button></br>
-        <button class="w3-btn w3-red" style="margin-top: 50px;"> RESET CLASSEMENT </button>
+        <input class="w3-center w3-select" type="number" name="points" min="0" step="1" style="width: 60%;margin-top: 10px;"></br>
+        <a href="/admin/addpoint"><btn class="w3-btn w3-green" type="submit" style="margin-top: 40px;"> VALIDER POINTS </btn></a></br>
+        <a href="/admin/delpoint"><btn class="w3-btn w3-red" type="submit" style="margin-top: 50px;"> RESET CLASSEMENT </btn></a>
     </div>
 
 </div>
