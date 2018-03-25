@@ -23,6 +23,7 @@
         <url-pattern>/compteadmin</url-pattern>
         <url-pattern>/accueiladmin</url-pattern>
         <url-pattern>/tournoiadmin</url-pattern>
+        <url-pattern>/admin/*</url-pattern>
     </filter-mapping>
     
     <filter>
@@ -56,6 +57,5 @@
         <url-pattern>/tournoiadmin</url-pattern>
         <url-pattern>/admin/*</url-pattern>
     </filter-mapping>
-
 
 </web-app>

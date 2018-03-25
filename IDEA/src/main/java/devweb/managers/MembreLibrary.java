@@ -47,14 +47,25 @@ public class MembreLibrary {
     }
 
     public void modifMdp(String email,String mdp){
+
         membreDao.modifMdp(email,mdp);
     }
 
     public void addPoint(String email, Integer nbpoint){
+
         membreDao.addPoint(email,nbpoint);
     };
 
-    public void deleteallpoint(){
-        membreDao.deleteallpoint();
+    public void deleteAllPoint(){
+
+        membreDao.deleteAllPoint();
     };
+
+    public void joinTournoi(String email){
+        membreDao.joinTournoi(email);
+    }
+
+    public void cancelJoin(String email){
+        membreDao.cancelJoin(email);
+    }
 }

@@ -22,5 +22,9 @@ public interface MembreDao {
 
     public void addPoint(String email, Integer nbpoint);
 
-    public void deleteallpoint();
+    public void deleteAllPoint();
+
+    public void joinTournoi(String email);
+
+    public void cancelJoin(String email);
 }

@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<link rel="stylesheet" href="compiled/flipclock.css">
 
 <div th:replace="~{fragment::style4}"></div>
 
@@ -21,17 +20,20 @@
 
 <div class="w3-display-middle w3-content w3-container w3-white">
 <div class="clock" id="clock2">
-    <p> SALUT LES BROS </p>
+    <p> MINUTEUR </p>
 </div>
 </div>
 
 <script id="script2"></script>
 
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="compiled/flipclock.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script src="/js/minuteur.js" type="text/javascript"></script>
 
 <script>
-    $('#clock2').load("tournoiadmin #clock");
+    $(document).ready(function () {
+        $('#clock2').load("tournoiadmin #time-display");
+    });
 </script>
 
 <div th:replace="~{fragment::script}"></div>

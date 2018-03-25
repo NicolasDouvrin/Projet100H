@@ -1,6 +1,5 @@
 package devweb.servlets;
 
-
 import devweb.services.ArticleService;
 
 import javax.servlet.ServletException;

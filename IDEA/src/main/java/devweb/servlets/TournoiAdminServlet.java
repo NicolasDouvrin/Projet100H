@@ -22,7 +22,7 @@ public class TournoiAdminServlet extends GenericServlet {
 
         WebContext context = new WebContext(req, resp, req.getServletContext());
 
-        List<Membre> listOfMembresInscrit = MembreLibrary.getInstance().listMembres();
+        List<Membre> listOfMembresInscrit = MembreLibrary.getInstance().listMembresInscrit();
         context.setVariable("membresList",listOfMembresInscrit);
 
         TemplateEngine templateEngine = createTemplateEngine(req.getServletContext());
