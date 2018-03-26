@@ -1,26 +1,26 @@
 package devweb.servlets;
 
 import devweb.managers.MembreLibrary;
+import devweb.services.TournoiService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Enumeration;
 
-@WebServlet("/addpoint")
-public class AddPointServlet extends HttpServlet {
+@WebServlet("/start")
+public class StartTournoiServlet extends GenericServlet{
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String idemail = req.getParameter("emailjoueur");
-        Integer nbpoint = Integer.parseInt(req.getParameter("nb-point"));
+        String type = req.getParameter("type");
+        Integer nbplace = Integer.parseInt(req.getParameter("nbplace"));
 
         try {
-            MembreLibrary.getInstance().addPoint(idemail,nbpoint);
+            TournoiService.getInstance().startTournoi(nbplace,type);
+            TournoiService.getInstance().initTournoi();
         } catch (IllegalArgumentException e) {
             req.getSession().setAttribute("addpointErrorMessage", e.getMessage());
         } catch (Exception e) {
@@ -31,3 +31,5 @@ public class AddPointServlet extends HttpServlet {
 
     }
 }
+
+

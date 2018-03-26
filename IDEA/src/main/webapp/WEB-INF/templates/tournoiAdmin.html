@@ -34,7 +34,8 @@
     <div name="gestion tournoi" class="w3-display-middle w3-quarter w3-center w3-content w3-container w3-blue" style="padding-bottom:50px;top:60%;">
         <h1 class="w3-border" style="margin-bottom: 50px;"> TABLES</h1>
         <p> Nombre de joueurs inscrits : 34 </p></br>
-        <select style="width: 200px;">
+        <form method="post" action="/start">
+        <select name="nbplace" class="w3-select" style="width: 60%;">
             <option> Places par tables </option>
             <option> 4 </option>
             <option> 5 </option>
@@ -42,12 +43,12 @@
             <option> 7 </option>
             <option> 8 </option>
         </select></br>
-        <select style="width: 200px;">
-            <option> Type de partie</option>
-            <option> Placement Aléatoire </option>
-            <option> Placement par Classement </option>
+        <select name="type" class="w3-select" style="width: 60%;margin-top: 15px;">
+            <option> Type de placement</option>
+            <option> Aleatoire </option>
+            <option> Classement </option>
         </select></br></br>
-        <btn class="w3-btn w3-green" style="margin-bottom: 10px"> LANCER TOURNOI</btn></br>
+        <input class="w3-btn w3-green" style="margin-bottom: 10px" value="LANCER TOURNOI" type="submit"></br></form>
         <btn class="w3-btn w3-amber" >  NOUVELLE PARTIE </btn></br>
         <btn class="w3-btn w3-red" style="margin-top: 50px;"> RESET TOURNOI</btn></br>
     </div>
@@ -56,6 +57,7 @@
         <h1 class="w3-border" style="margin-bottom:50px;"> POINTS </h1>
         <p> Sélectionner un joueur et entrer ses points :</p>
 
+        <form method="post" action="/addpoint">
         <select class="selection w3-select" name="emailjoueur" style="width: 60%">
             <option > Joueurs Inscrits </option>
             <option name="option3" th:each="membre : ${membresList}"
@@ -63,10 +65,9 @@
                     th:value="${membre.email}">
             </option>
         </select></br>
+        <input class="w3-center w3-select"name="nb-point" placeholder="Nombre de points" style="width: 60%;margin-top: 15px;height: 40px;"></br>
+        <input class="w3-btn w3-green" type="submit" style="margin-top: 40px;" value="VALIDER POINTS"/></form></br>
 
-        <input class="w3-center w3-select"name="nb-point" style="width: 60%;margin-top: 15px;height: 40px;"></br>
-
-        <form method="post" action="/addpoint"><input class="w3-btn w3-green" type="submit" style="margin-top: 40px;" value="VALIDER POINTS"/></form></br>
         <form method="post" action="/admin/delpoint"><input class="w3-btn w3-red" type="submit" style="margin-top: 50px;" value="RESET CLASSEMENT"/></form>
     </div>
 

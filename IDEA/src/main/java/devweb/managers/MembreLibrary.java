@@ -1,6 +1,7 @@
 package devweb.managers;
 
 import devweb.dao.MembreDao;
+import devweb.dao.TournoiDao;
 import devweb.dao.impl.MembreDaoImpl;
 import devweb.entities.Membre;
 
@@ -68,4 +69,6 @@ public class MembreLibrary {
     public void cancelJoin(String email){
         membreDao.cancelJoin(email);
     }
+
+
 }
