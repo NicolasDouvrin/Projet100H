@@ -10,6 +10,7 @@ public class TournoiService {
     }
 
     public static TournoiService getInstance() {
+
         return TournoiService.TournoiServiceHolder.instance;
     }
 
@@ -19,10 +20,17 @@ public class TournoiService {
     private TournoiDao tournoiDao = new TournoiDao();
 
     public void startTournoi(Integer nbPlace, String type){
+
         tournoiDao.startTournoi(nbPlace, type);
     }
 
     public void initTournoi(){
+
         tournoiDao.initTournoi();
+    }
+
+    public int nbinscrit(){ ;
+
+        return tournoiDao.nbinscrit();
     }
 }

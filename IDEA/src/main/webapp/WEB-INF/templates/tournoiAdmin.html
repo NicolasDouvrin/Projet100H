@@ -33,7 +33,7 @@
 
     <div name="gestion tournoi" class="w3-display-middle w3-quarter w3-center w3-content w3-container w3-blue" style="padding-bottom:50px;top:60%;">
         <h1 class="w3-border" style="margin-bottom: 50px;"> TABLES</h1>
-        <p> Nombre de joueurs inscrits : 34 </p></br>
+        <p th:text="'Nombre de joueurs inscrits :   '+${membresInscrit}"></p></br>
         <form method="post" action="/start">
         <select name="nbplace" class="w3-select" style="width: 60%;">
             <option> Places par tables </option>
@@ -58,7 +58,7 @@
         <p> Sélectionner un joueur et entrer ses points :</p>
 
         <form method="post" action="/addpoint">
-        <select class="selection w3-select" name="emailjoueur" style="width: 60%">
+        <select class="selection w3-select" name="emailjoueur" style="width: 60%;margin-top: 20px">
             <option > Joueurs Inscrits </option>
             <option name="option3" th:each="membre : ${membresList}"
                     th:text="${membre.nom}+' '+${membre.prenom}"

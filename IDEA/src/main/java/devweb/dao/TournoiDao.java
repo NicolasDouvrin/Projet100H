@@ -1,11 +1,13 @@
 package devweb.dao;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+import devweb.dao.impl.DataSourceProvider;
+import devweb.entities.Tournoi;
 
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TournoiDao {
 
@@ -33,17 +35,30 @@ public class TournoiDao {
     }
 
     public void initTournoi(){
-        String query = "CREATE VIEW test AS\n" +
-                "SELECT idTournoi\n" +
-                "FROM tournoi\n" +
-                "ORDER BY idTournoi DESC LIMIT 1;" +
-                " UPDATE test SET nbInscrits=(select count(email) from membre where inscrit=1 GROUP BY email)";
+        String query = "UPDATE tournoi SET tournoi.nbInscrits=(select count(membre.email) from membre where membre.inscrit=1);";
         try (Connection connection = getDatasource().getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+
+    public int nbinscrit(){
+        Integer nombre = 10;
+        try (Connection connection = getDatasource().getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery("Select nbInscrits From tournoi ORDER BY idTournoi DESC LIMIT 1")) {
+             resultSet.next();
+             nombre=resultSet.getInt(1);
+             resultSet.close();
+             statement.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return nombre;
     }
 
 

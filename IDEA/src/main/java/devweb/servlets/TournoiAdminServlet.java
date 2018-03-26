@@ -2,6 +2,7 @@ package devweb.servlets;
 
 import devweb.entities.Membre;
 import devweb.managers.MembreLibrary;
+import devweb.services.TournoiService;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 
@@ -24,6 +25,9 @@ public class TournoiAdminServlet extends GenericServlet {
 
         List<Membre> listOfMembresInscrit = MembreLibrary.getInstance().listMembresInscrit();
         context.setVariable("membresList",listOfMembresInscrit);
+
+        Integer nbInscrit = TournoiService.getInstance().nbinscrit();
+        context.setVariable("membresInscrit",nbInscrit);
 
         TemplateEngine templateEngine = createTemplateEngine(req.getServletContext());
         templateEngine.process("tournoiAdmin", context, resp.getWriter());
