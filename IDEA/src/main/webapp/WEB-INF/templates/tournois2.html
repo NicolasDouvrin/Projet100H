@@ -11,17 +11,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-
-<div th:replace="~{fragment::style4}"></div>
+<div th:replace="~{fragment::style5}"></div>
 
 <body>
 
 <div th:replace="~{fragment::navbar3}"></div>
 
-<div class="w3-display-middle w3-content w3-container w3-white">
-<div class="clock" id="clock2">
-    <p> MINUTEUR </p>
+<div name="tournoi" class="w3-center w3-green w3-content w3-container" style="margin-top: 80px;">
+    <h1> AFFICHAGE TOURNOI </h1>
 </div>
+
+<div class="w3-container" name="tabletournoi" style="margin-top:10%;margin-left: 5px;">
+    <h4 class="w3-white w3-center" style="width: 300px" > Nicolas Nicolas Nicolas </h4>
+    <img src="/img/table.png" style="width: 300px;">
+    <h4 class="w3-white w3-center" style="width: 300px" > Nicolas Nicolas Nicolas </h4>
+</div>
+
+<div class="w3-display-topright w3-content w3-container w3-black" style="margin-top: 5%;margin-right: 15px;">
+    <div class="clock" id="clock2">
+     <p> MINUTEUR </p>
+    </div>
+   <iframe src="tournoiadmin" width="500" height="300" name="myFrame" id="myFrame" scrolling="no"></iframe>
 </div>
 
 <script id="script2"></script>
