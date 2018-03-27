@@ -31,7 +31,6 @@
     <div class="clock" id="clock2">
      <p> MINUTEUR </p>
     </div>
-   <iframe src="tournoiadmin" width="500" height="300" name="myFrame" id="myFrame" scrolling="no"></iframe>
 </div>
 
 <script id="script2"></script>
@@ -41,9 +40,8 @@
 <script src="/js/minuteur.js" type="text/javascript"></script>
 
 <script>
-    $(document).ready(function () {
         $('#clock2').load("tournoiadmin #time-display");
-    });
+        $('#script2').load("tournoiadmin #script1");
 </script>
 
 <div th:replace="~{fragment::script}"></div>

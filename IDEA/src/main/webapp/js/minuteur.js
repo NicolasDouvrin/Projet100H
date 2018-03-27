@@ -1,19 +1,6 @@
-function resetPage() {
-    stateSetting.classList.remove("state-rotate"), (document.getElementById(
-        "minutes"
-    ).value =
-        "");
-}
 
-function startBreak() {
-    var e = document.getElementsByTagName("audio")[0];
-    e.play(), (stateSetting = document.getElementById(
-        "background-setting"
-    )), stateSetting.classList.add("state-rotate"), (document.getElementById(
-        "minutes"
-    ).value =
-        "Enjoy your break"), setTimeout(resetPage, 5e3);
-}
+
+
 
 function tick() {
     var e = document.getElementById("time-display"),
