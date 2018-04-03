@@ -113,19 +113,18 @@
         <div class="w3-col m8 w3-panel">
             <div class="w3-large w3-margin-bottom">
                 <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> HEI, 13 rue de Toul 59000 LILLE<br>
-                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: lucas.verriere@hei.yncrea.fr<br>
             </div>
             </br>
-            <form action="/action_page.php" target="_blank">
+            <form action="mailto:lucas.verriere@hei.yncrea.fr?subject=Contact Pokheir" name="envoi" method=POST enctype="text/plain">
                 <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                     <div class="w3-half">
-                        <input class="w3-input w3-border" type="text" placeholder="Nom et prénom" required name="Name">
+                        <input class="w3-input w3-border" id="nom" type="text" placeholder="Nom et prénom" required name="Nom et prenom">
                     </div>
                     <div class="w3-half">
-                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        <input class="w3-input w3-border" id="email" type="text" placeholder="Email" required name="Email">
                     </div>
                 </div>
-                <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                <input class="w3-input w3-border" id="message" type="text" placeholder="Message" required name="Message">
                 <button class="w3-button w3-black w3-right w3-section" type="submit">
                     <i class="fa fa-paper-plane"></i> ENVOYER MESSAGE
                 </button>
