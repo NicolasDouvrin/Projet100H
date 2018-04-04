@@ -187,4 +187,21 @@ public class MembreDaoImpl implements MembreDao {
             e.printStackTrace();
         }
     }
+
+
+    public int nbinscrit(){
+        Integer nombre = 10;
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery("Select count(inscrit) From membre WHERE inscrit='1'")) {
+            resultSet.next();
+            nombre=resultSet.getInt(1);
+            resultSet.close();
+            statement.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return nombre;
+    }
 }
