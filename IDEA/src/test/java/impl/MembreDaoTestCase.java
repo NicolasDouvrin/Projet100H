@@ -73,7 +73,7 @@ public class MembreDaoTestCase {
         // THEN
         try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              Statement stmt = connection.createStatement()) {
-            try (ResultSet rs = stmt.executeQuery("SELECT * FROM membre WHERE email='test' AND nom = 'test' AND prenom='test' AND classe='test' AND mdp='test' AND nbPoints='0' AND partiesGagnees='0' AND partiesJouees='0'")) {
+            try (ResultSet rs = stmt.executeQuery("SELECT * FROM membre WHERE email='test' AND nom = 'test' AND prenom='test' AND classe='test' AND mdp='test' AND nbPoints='0' AND partiesJouees='0' AND inscrit='0'")) {
                 assertThat(rs.next()).isTrue();
                 assertThat(rs.getString("email")).isEqualTo("test");
                 assertThat(rs.getString("nom")).isEqualTo("test");
@@ -81,22 +81,29 @@ public class MembreDaoTestCase {
                 assertThat(rs.getString("classe")).isEqualTo("test");
                 assertThat(rs.getString("mdp")).isEqualTo("test");
                 assertThat(rs.getInt("nbPoints")).isEqualTo(0);
-                assertThat(rs.getInt("partiesGagnees")).isEqualTo(0);
                 assertThat(rs.getInt("partiesJouees")).isEqualTo(0);
+                assertThat(rs.getInt("inscrit")).isEqualTo(0);
                 assertThat(rs.next()).isFalse();
             }
         }
     }
 
+
     @Test
     public void shouldDeleteMembre() throws Exception {
 
         membreDao.deleteMembre("test");
+        membreDao.deleteMembre("jp@hei.fr");
+        membreDao.deleteMembre("michel@hei.fr");
+        membreDao.deleteMembre("jc@hei.fr");
 
-      /*  try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+        try (Connection connection = DataSourceProvider.getDataSource().getConnection();
              Statement stmt = connection.createStatement()) {
-            stmt.executeUpdate("DELETE FROM articles WHERE email='test' ");
+            try (ResultSet rs = stmt.executeQuery("SELECT * FROM membre WHERE email='test'")) {
+                assertThat(rs.next()).isFalse();
+            }
+        }
 
-        }*/
     }
+
 }

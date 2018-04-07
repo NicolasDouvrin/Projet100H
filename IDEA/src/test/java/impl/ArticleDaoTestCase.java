@@ -72,7 +72,9 @@ public class ArticleDaoTestCase {
             try (Connection connection = articleDao.getDatasource().getConnection();
                  Statement stmt = connection.createStatement()) {
                 stmt.executeUpdate("DELETE FROM articles WHERE idArticle=4 ");
-
+                stmt.executeUpdate("DELETE FROM articles WHERE idArticle=1 ");
+                stmt.executeUpdate("DELETE FROM articles WHERE idArticle=2 ");
+                stmt.executeUpdate("DELETE FROM articles WHERE idArticle=3 ");
                 }
         }
 }
